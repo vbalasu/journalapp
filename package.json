@@ -1,0 +1,56 @@
+{
+  "name": "com.cloudmatica.journal",
+  "displayName": "Journal",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.0.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-customurlscheme": "^5.0.2",
+    "cordova-plugin-inappbrowser": "^4.0.0",
+    "cordova-plugin-safariviewcontroller": "^1.6.0",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-safariviewcontroller": {},
+      "cordova-plugin-customurlscheme": {
+        "URL_SCHEME": "com.cloudmatica.journal",
+        "ANDROID_SCHEME": "com.cloudmatica.journal",
+        "ANDROID_HOST": "cloudmatica.auth0.com",
+        "ANDROID_PATHPREFIX": "/cordova/com.cloudmatica.journal/callback"
+      },
+      "cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.893193964658-8s0u87dfga7lr2352iemqa4hdum7114s",
+        "WEB_APPLICATION_CLIENT_ID": "893193964658-8s0u87dfga7lr2352iemqa4hdum7114s.apps.googleusercontent.com"
+      }
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "@auth0/cordova": "^0.4.3",
+    "auth0-js": "^9.14.0",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "cordova-plugin-googleplus": "git+https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git",
+    "easymde": "^2.13.0",
+    "jquery": "^3.5.1",
+    "js-cookie": "^2.2.1",
+    "marked": "^1.2.5",
+    "popper.js": "^1.16.1"
+  }
+}
